@@ -1,5 +1,5 @@
 {
-    "name": "visitorinfo",
+    "name": "katheesh/visitorinfo",
     "description": "website visitor details get using their Ip addresses",
     "type": "library",
     "license": "MIT",

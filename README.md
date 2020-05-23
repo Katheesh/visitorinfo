@@ -11,7 +11,7 @@
 #### Install using composer
 ```bash
 # install it via composer
-composer require vitalis/hello-composer
+composer require visitorinfo
 
 ```
 <hr>
