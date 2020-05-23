@@ -23,7 +23,7 @@ abstract class HttpVistorInfo
     protected $client;
 
     /**
-     * AbstractIpInfoService constructor.
+     * VisitorInfoService constructor.
      *
      * @param Client $client
      */

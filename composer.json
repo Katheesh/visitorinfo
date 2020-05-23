@@ -1,6 +1,6 @@
 {
     "name": "katheesh/visitorinfo",
-    "description": "website visitor details get using their Ip addresses",
+    "description": "This package can help you to website visitor details get using their Ip address",
     "type": "library",
     "license": "MIT",
     "authors": [

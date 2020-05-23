@@ -3,7 +3,7 @@
 namespace VisitorInfo;
 
 
-class HttpAPI extends HttpVistorInfo
+class GetInfo extends HttpVistorInfo
 {
     /**
      * Url for "Geo-Ip API" service.

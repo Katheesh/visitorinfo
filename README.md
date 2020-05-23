@@ -11,7 +11,7 @@
 #### Install using composer
 ```bash
 # install it via composer
-composer require visitorinfo
+composer require katheesh/visitorinfo
 
 ```
 <hr>
