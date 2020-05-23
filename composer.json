@@ -2,6 +2,13 @@
     "name": "visitorinfo",
     "description": "website visitor details get using their Ip addresses",
     "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "S. Katheeskumar",
+            "email": "ikatheesh@gmail.com"
+        }
+    ],
     "version": "1.0.0",
     "minimum-stability": "dev",
     "prefer-stable": true,
