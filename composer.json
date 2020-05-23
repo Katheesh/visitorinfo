@@ -1,0 +1,17 @@
+{
+    "name": "visitorinfo",
+    "description": "website visitor details get using their Ip addresses",
+    "type": "library",
+    "version": "1.0.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=5.3.0",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "VisitorInfo\\": "src/"
+        }
+    }
+}
