@@ -24,6 +24,21 @@ composer require katheesh/visitorinfo
 
 ```php
 
+require_once __DIR__ . '/vendor/autoload.php';
+
+use VisitorInfo\GetInfo;
+
+$info = new GetInfo;
+
+
+    // get IP and geographical information about your client
+echo $info->getGeoInfo();
+
+    // get service provider information about your client
+echo $info->getProviderInfo();
+
+     // get hosting provider information about your client
+echo $info->getHostingInfo();
 
 
 

@@ -2,9 +2,18 @@
 
 namespace VisitorInfo;
 
+use GuzzleHttp\Client;
 
-class GetInfo extends HttpVistorInfo
+class GetInfo 
 {
+
+    /**
+     * Request method for API.
+     *
+     * @var string
+     */
+    protected $requestMethod = 'GET';
+
     /**
      * Url for "Geo-Ip API" service.
      * Parameter: ip=*.*.*.*
@@ -39,25 +48,53 @@ class GetInfo extends HttpVistorInfo
     private $emailApiUrl = 'http://api.2ip.ua/email.txt';
 
     /**
-     * @param $ip string
-     * @return array|string
+     * Guzzle http client.
+     *
+     * @var Client
      */
-    public function getGeoInfo($ip)
-    {
-        $response = $this->client->{$this->requestMethod}($this->geoIpApiUrl, ['query' => ['ip' => $ip]]);
+    protected $client;
 
-        return $this->convertJsonResponseToArray($response);
+    /**
+     * VisitorInfoService constructor.
+     *
+     * @param Client $client
+     */
+    public function __construct()
+    {
+        $this->client = new Client();
     }
 
     /**
      * @param $ip string
      * @return array|string
      */
-    public function getProviderInfo($ip)
+    public function getGeoInfo()
     {
-        $response = $this->client->{$this->requestMethod}($this->providerIpApiUrl, ['query' => ['ip' => $ip]]);
 
-        return $this->convertJsonResponseToArray($response);
+        //$client = new Client();
+
+        $response = $this->client->request($this->requestMethod, $this->geoIpApiUrl);
+
+        //echo $response->getStatusCode();
+        // "200"
+        //echo $response->getHeader('content-type')[0];
+        // 'application/json; charset=utf8'
+        //echo $response->getBody();
+
+        //$response = $this->client->{$this->requestMethod}($this->geoIpApiUrl, ['query' => ['ip' => $ip]]);
+
+        return $response->getBody();
+    }
+
+    /**
+     * @param $ip string
+     * @return array|string
+     */
+    public function getProviderInfo()
+    {
+        $response = $this->client->{$this->requestMethod}($this->providerIpApiUrl);
+
+        return $response->getBody();
     }
 
     /**
@@ -78,11 +115,11 @@ class GetInfo extends HttpVistorInfo
      * @param $domain string
      * @return array|string
      */
-    public function getHostingInfo($domain)
+    public function getHostingInfo()
     {
-        $response = $this->client->{$this->requestMethod}($this->hostingApiUrl, ['query' => ['site' => $domain]]);
+        $response = $this->client->{$this->requestMethod}($this->hostingApiUrl);
 
-        return $this->convertJsonResponseToArray($response);
+        return $response->getBody();
     }
 
     /**
