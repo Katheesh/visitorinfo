@@ -2,9 +2,9 @@
 
 ### This package has been developed by identifying website visitors using their IP addresses. 
 #### [We will never use your visitor IP addresses, or share your data with anyone else who might.](https://gitleaf.com/privacy-policy)
-#### Package developed by [S.Katheeskumar](https://katheesh.github.io)
+#### Package developed by [S.Katheeskumar](https://katheesh.github.io) 
+##### [Support](https://www.buymeacoffee.com/katheesh) buy me a coffee
 <img src="https://gitleaf.com/img/quote.png"/>
-[Support](https://www.buymeacoffee.com/katheesh) buy me a coffee
 <hr/>
 
 ## Installation
