@@ -4,7 +4,7 @@
 #### [We will never use your visitor IP addresses, or share your data with anyone else who might.](https://gitleaf.com/privacy-policy)
 #### Package developed by [S.Katheeskumar](https://katheesh.github.io)
 <img src="https://gitleaf.com/img/quote.png"/>
-[Support buy me a coffee](https://www.buymeacoffee.com/katheesh)
+[Support](https://www.buymeacoffee.com/katheesh) buy me a coffee
 <hr/>
 
 ## Installation
