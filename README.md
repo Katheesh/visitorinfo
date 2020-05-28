@@ -3,7 +3,8 @@
 ### This package has been developed by identifying website visitors using their IP addresses. 
 #### [We will never use your visitor IP addresses, or share your data with anyone else who might.](https://gitleaf.com/privacy-policy)
 #### Package developed by [S.Katheeskumar](https://katheesh.github.io) 
-##### [Support](https://www.buymeacoffee.com/katheesh) buy me a coffee
+##### [Support](https://www.patreon.com/bePatron?u=32135007) &
+<a href="https://www.patreon.com/bePatron?u=32135007" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 <img src="https://gitleaf.com/img/quote.png"/>
 <hr/>
 
